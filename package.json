@@ -6,7 +6,8 @@
   "author": "Augusto Teixeira <aught.ceo@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+    "dev": "ts-node-dev src/app.ts"
   },
   "husky": {
     "hooks": {
