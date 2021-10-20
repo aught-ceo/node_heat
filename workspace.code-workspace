@@ -12,5 +12,14 @@
 		"editor.tabSize": 2,
     "editor.insertSpaces": true,
     "editor.renderWhitespace": "all"
+	},
+	"extensions": {
+		"recommendations": [
+			"prisma.prisma-insider",
+			"devzstudio.emoji-snippets",
+			"dbaeumer.vscode-eslint",
+			"esbenp.prettier-vscode",
+			"prisma.prisma"
+		]
 	}
 }
