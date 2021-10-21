@@ -20,7 +20,9 @@
 			"devzstudio.emoji-snippets",
 			"dbaeumer.vscode-eslint",
 			"esbenp.prettier-vscode",
-			"prisma.prisma"
+			"prisma.prisma",
+			"wix.vscode-import-cost",
+			"rangav.vscode-thunder-client"
 		]
 	}
 }
