@@ -9,4 +9,7 @@
       "source.fixAll.eslint": true
   },
   "files.trimTrailingWhitespace": true,
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
 }
