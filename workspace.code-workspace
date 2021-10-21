@@ -4,16 +4,6 @@
 			"path": "."
 		}
 	],
-	"settings": {
-		"editor.codeActionsOnSave": {
-			"source.fixAll.eslint": true
-		},
-		"editor.formatOnSave": true,
-		"editor.tabSize": 2,
-    "editor.insertSpaces": true,
-    "editor.renderWhitespace": "all",
-		"files.trimTrailingWhitespace": true
-	},
 	"extensions": {
 		"recommendations": [
 			"prisma.prisma-insider",
