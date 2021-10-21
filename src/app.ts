@@ -4,7 +4,9 @@ import { router } from "./routes";
 
 const app = express();
 app.use(express.json())
-
 app.use(router);
 
-app.listen(4000, () => console.log(`🚀 Server is running on port 4000`))
+app.set('port', process.env.PORT || 4000);
+app.set('host', process.env.HOST || 'localhost');
+
+app.listen(app.get('port'), () => console.log(`🚀 Server is running at http://${app.get('host')}:${app.get('port')}`));
