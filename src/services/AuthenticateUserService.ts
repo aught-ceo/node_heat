@@ -7,7 +7,7 @@ interface IAccessTokenResponse {
 interface IUserResponse {
   avatar_url: string,
   login: string,
-  uid: number,
+  id: number,
   name: string
 }
 
