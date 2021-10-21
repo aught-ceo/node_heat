@@ -1,5 +1,7 @@
 import { Router } from "express";
 import { AuthenticateUserController } from "./controllers/AuthenticateUserController";
+import { CreateMessageController } from "./controllers/CreateMessageController";
+import { ensureAuthenticated } from "./middleware/ensureAuthenticated";
 
 const router = Router();
 
@@ -13,8 +15,10 @@ router.get("/github", (request, response) => {
 
 router.get("/signin/callback", (request, response) => {
   const { code } = request.query;
-  return response.json({"code": code});
+  return response.json({ "code": code });
 })
+
+router.post("/messages", ensureAuthenticated, new CreateMessageController().handle)
 
 
 export { router }
