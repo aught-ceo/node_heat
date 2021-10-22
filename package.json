@@ -9,16 +9,6 @@
     "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
     "dev": "ts-node-dev --exit-child src/server.ts"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,ts,tsx}": [
-      "eslint --fix"
-    ]
-  },
   "dependencies": {
     "@prisma/client": "3.3.0",
     "axios": "^0.23.0",
@@ -38,7 +28,6 @@
     "@typescript-eslint/parser": "^5.1.0",
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.4.1",
     "prisma": "3.3.0",
     "ts-node-dev": "^1.1.8",
