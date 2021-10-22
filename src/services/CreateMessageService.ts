@@ -1,6 +1,5 @@
-import { io } from "../app";
-import prismaClient from "../prisma";
-
+import { io } from '../app';
+import prismaClient from '../prisma';
 
 class CreateMessageService {
   async execute(text: string, user_id: string) {
@@ -22,14 +21,12 @@ class CreateMessageService {
         name: message.user.name,
         avatar_url: message.user.avatar_url
       }
-    }
+    };
 
-    io.emit("new_message", infoWS)
+    io.emit('new_message', infoWS);
 
     return message;
   }
-
-
 }
 
-export { CreateMessageService }
+export { CreateMessageService };
