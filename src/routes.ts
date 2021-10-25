@@ -1,4 +1,8 @@
+import { Router } from 'express';
+import { AuthenticateUserController } from './controllers/AuthenticateUserController';
+import { CreateMessageController } from './controllers/CreateMessageController';
 import { UserProfileController } from './controllers/UserProfileController';
+import { ensureAuthenticated } from './middleware/ensureAuthenticated';
 
 const router = Router();
 
