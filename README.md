@@ -1,9 +1,15 @@
+# Development
+
 Copy .env.sample to .env and update properties
+
+Install project's dependencies
 
 `yarn install`
 
-`npm install -g prisma-cli`
+Migrate data
 
-`prisma migrate dev`
+`yarn prisma migrate dev`
+
+Start dev server
 
 `yarn dev`
